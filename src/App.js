@@ -6,10 +6,10 @@ import './App.css';
 function App() {
 	return (
 		<React.Fragment>
-			<Switch>
-				<Route path='/check_your_air' component={LocationForm} />
-				<Redirect from='/' exact to='/check_your_air' />
-			</Switch>
+			<div className='container'>
+				<Route path='/check_your_air' exact component={LocationForm} />
+				{/* <Redirect from='/' to='/check_your_air' /> */}
+			</div>
 		</React.Fragment>
 	);
 }
