@@ -1,8 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-
+import LocationForm from './component/locationForm';
 function App() {
-	return <div className='App'>hello</div>;
+	return (
+		<React.Fragment>
+			<Switch>
+				<Route path='/check_your_air' component={LocationForm} />
+			</Switch>
+		</React.Fragment>
+	);
 }
 
 export default App;
