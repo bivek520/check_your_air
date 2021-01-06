@@ -5,12 +5,10 @@ import LocationForm from './component/locationForm';
 import './App.css';
 function App() {
 	return (
-		<React.Fragment>
-			<div className='container'>
-				<Route path='/check_your_air' component={LocationForm} />
-				{/* <Redirect from='/' to='/check_your_air' /> */}
-			</div>
-		</React.Fragment>
+		<Switch>
+			<Route path='/check_your_air' component={LocationForm} />
+			{/* <Redirect from='/' to='/check_your_air' />  */}
+		</Switch>
 	);
 }
 
