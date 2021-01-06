@@ -30,14 +30,13 @@ class LocationForm extends Form {
 		// Call the server
 		const { locations, data } = this.state;
 		const loc = locations.filter((m) => m._id === data.location);
-		console.log(loc[0], 'doSubmitt');
+
 		const result = await getCity(loc[0]);
 		this.setState({ result: result.data.data });
-		// console.log('Submitted', this.state.data.location, this.state.aqius, result.data.data.log);
 	};
 	render() {
 		const { result, locations } = this.state;
-		console.log(getRanking());
+
 		return (
 			<div className='container'>
 				<h1 className='head'>Check Your Air Quality</h1>

@@ -12,7 +12,7 @@ function evalAQI(aqi) {
 }
 const Result = (props) => {
 	const { value } = props;
-	console.log(value);
+
 	if (value) {
 		const { city, state, country } = value;
 		const { aqius } = value.current.pollution;

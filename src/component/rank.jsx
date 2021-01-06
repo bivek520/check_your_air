@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import ran
+
 
 
 const Ranking = () => {
-    return ( console.log() );
+    return (  );
 }
  
-export default Ranking;console.log()
+export default Ranking;
