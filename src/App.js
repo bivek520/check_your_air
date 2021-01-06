@@ -7,7 +7,7 @@ function App() {
 	return (
 		<React.Fragment>
 			<div className='container'>
-				<Route path='/' component={LocationForm} />
+				<Route path='/check_your_air' component={LocationForm} />
 				{/* <Redirect from='/' to='/check_your_air' /> */}
 			</div>
 		</React.Fragment>

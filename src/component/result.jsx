@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 function evalAQI(aqi) {
 	if (aqi >= 0 && aqi <= 50) return { condition: 'Good', color: 'Green' };
-	// 51 to 100	Moderate	Yellow
-	// 101 to 150	Unhealthy for Sensitive Groups	Orange
-	// 151 to 200	Unhealthy	Red
-	// 201 to 300	Very Unhealthy	Purple
-	// 301 to 500	Hazardous	Maroon
+	else if (aqi >= 51 && aqi <= 100) return { condition: 'Moderate', color: 'Yellow' };
+	else if (aqi >= 101 && aqi <= 150) return { condition: 'Unhealthy for Sensitive Groups', color: 'Orange' };
+	else if (aqi >= 151 && aqi <= 200) return { condition: 'Unhealthy', color: 'Red' };
+	else if (aqi >= 201 && aqi <= 300) return { condition: 'Very Unhealthy', color: 'Purple' };
+	else if (aqi >= 301 && aqi <= 500) return { condition: 'Hazardous', color: 'Maroon' };
 
-	return 'hello';
+	return null;
 }
 const Result = (props) => {
 	const { value } = props;
@@ -18,7 +18,7 @@ const Result = (props) => {
 		const { aqius } = value.current.pollution;
 		const quality = evalAQI(aqius);
 		return (
-			<div className='card text-center w-75'>
+			<div className='card text-center w-60'>
 				<div className='card-header'>
 					{city}, {state}, {country}
 				</div>
