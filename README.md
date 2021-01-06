@@ -1,9 +1,36 @@
 # check-your-air
 
-###### This app is built to monitor the air pollution
+<p>This app monitors the air quality of certain cities of Nepal</p>
 
-# Motivation
+------------
 
-<p>
-    In recent days I have been seeing a lot of new about air pollution in my home country. So I decided to built an application that checks the air quality of any given city.
-</p>
+
+###Supported Location 
+- Bhaktapur
+- Bharatpur
+- Dhulikhel
+- Kathmandu
+- Kirtipur
+- Patan
+- Dhankuta
+- Nepalgunj
+- Tulsipur
+- Pokhara
+
+------------
+
+
+### Motivation
+Kathmandu, my home city hits the record high of air pollution. To track the quality of air I build this web application.
+
+------------
+
+
+###Technology Used
+React 
+
+------------
+
+
+###API Used
+AirVisual API (https://www.iqair.com/us/air-pollution-data-api)
