@@ -2,7 +2,7 @@
 
 <p>This app monitors the air quality of certain cities of Nepal</p>
 
-<<<<<<< HEAD
+
 ---
 
 ### Supported Location
