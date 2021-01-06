@@ -5,7 +5,7 @@
 ------------
 
 
-###Supported Location 
+### Supported Location 
 - Bhaktapur
 - Bharatpur
 - Dhulikhel
@@ -26,11 +26,11 @@ Kathmandu, my home city hits the record high of air pollution. To track the qual
 ------------
 
 
-###Technology Used
+### Technology Used
 React 
 
 ------------
 
 
-###API Used
+### API Used
 AirVisual API (https://www.iqair.com/us/air-pollution-data-api)
