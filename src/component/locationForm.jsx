@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from './common/form';
 import Joi from 'joi-browser';
-import { getCity, getRanking } from '../service/aqiService';
+import { getCity } from '../service/aqiService';
 import Result from './result';
 class LocationForm extends Form {
 	state = {
