@@ -66,5 +66,4 @@ React
 
 
 ### API Used
->>>>>>> 201c88b103e43a2987f80cdfed135a71b9496486
 AirVisual API (https://www.iqair.com/us/air-pollution-data-api)
