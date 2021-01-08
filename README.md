@@ -28,7 +28,7 @@ Kathmandu, my home city, hits a new record for air pollution. To track the quali
 
 ### Technology Used
 
-React
+React, Axios
 
 ---
 
