@@ -43,7 +43,7 @@ class LocationForm extends Form {
 		return (
 			<div className='container-fluid'>
 				<h1 className='head'>Check Your Air Quality</h1>
-				<h1 className='head_2'>------------------X-------------------</h1>
+				{/* <h1 className='head_2'>------------------X-------------------</h1> */}
 
 				<div className='row'>
 					<div className='col-md-auto'>
