@@ -41,7 +41,7 @@ class LocationForm extends Form {
 		const { result, locations } = this.state;
 
 		return (
-			<div className='container-fluidcontainer-fluid'>
+			<div className='container-fluid'>
 				<h1 className='head'>Check Your Air Quality</h1>
 				<h1 className='head_2'>------------------X-------------------</h1>
 
