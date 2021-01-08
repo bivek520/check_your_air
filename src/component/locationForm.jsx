@@ -41,21 +41,23 @@ class LocationForm extends Form {
 		const { result, locations } = this.state;
 
 		return (
-			<div className='container'>
+			<div className='container-fluidcontainer-fluid'>
 				<h1 className='head'>Check Your Air Quality</h1>
 				<h1 className='head_2'>------------------X-------------------</h1>
 
 				<div className='row'>
-					<div className='col'>
+					<div className='col-md-auto'>
 						<form onSubmit={this.handleSubmit}>
 							{/* {this.renderInput('location', 'Location')} */}
 							{this.renderSelect('location', 'Location', locations)}
 							{this.renderButton('Check')}
 						</form>
 					</div>
-					<button type='button' className='btn btn-danger' onClick={this.handleNearestCity}>
-						Check for nearest city
-					</button>
+					<div className='col-md-auto'>
+						<button type='button' className='btn btn-danger' onClick={this.handleNearestCity}>
+							Check for nearest city
+						</button>
+					</div>
 				</div>
 				<Result value={result} />
 			</div>
