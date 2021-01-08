@@ -10,11 +10,13 @@
 }
 .head_2 {
 	padding-bottom: 70px;
+	padding-right: 20px;
 	color: white;
 	text-align: center;
 	font-family: Luminari, fantasy;
 }
 .selectLabel {
 	color: white;
+	padding-right: 30px;
 	font-family: 'Courier New', Courier, monospace;
 }

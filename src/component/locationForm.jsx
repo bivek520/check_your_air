@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from './common/form';
 import Joi from 'joi-browser';
-import { getCity } from '../service/aqiService';
+import { getCity, getNearestCity } from '../service/aqiService';
 import Result from './result';
 class LocationForm extends Form {
 	state = {
@@ -25,7 +25,10 @@ class LocationForm extends Form {
 	schema = {
 		location: Joi.string().label('Location'),
 	};
-
+	handleNearestCity = async () => {
+		const result = await getNearestCity();
+		this.setState({ result: result.data.data });
+	};
 	doSubmit = async () => {
 		// Call the server
 		const { locations, data } = this.state;
@@ -49,9 +52,12 @@ class LocationForm extends Form {
 							{this.renderSelect('location', 'Location', locations)}
 							{this.renderButton('Check')}
 						</form>
-						<Result value={result} />
 					</div>
+					<button type='button' className='btn btn-danger' onClick={this.handleNearestCity}>
+						Check for nearest city
+					</button>
 				</div>
+				<Result value={result} />
 			</div>
 		);
 	}
